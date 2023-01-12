@@ -13,37 +13,26 @@
             colors: {
                 primary : "#5c76b4",
                 secondary : "#e5eefe",
-                gray: "#757677"
-
+                gray: "#757677",
+                back: "#536ca4"
             }
             }
         }
         }
     </script>
-    
-    <style>
-
-
-        body {
-            background-color: grey;
-        }
-    
-        /* .icon {
-            height: 40px;
-            width: 40px;
-            display: block;
-        } */
-    </style>
 </head>
 <body>
-    <div class="flex flex-row mx-auto mt-32 w-[700px] h-[320px] bg-white rounded-lg">
-        <div class="profile-image">
-            <img class="h-full w-[400px] rounded-l-lg" src="images/profile.jpg">
-        </div>
+    <div class="flex mx-auto justify-center items-center mt-32 w-[1000px] h-[400px] bg-back rounded-lg">
+    <div class="flex flex-row mx-auto mw-[700px] h-[320px] bg-white rounded-lg drop-shadow-2xl">
+        <!-- profile photo -->
+        <img class="h-full w-[400px] rounded-l-lg" src="images/profile.jpg">
 
+        <!-- right side -->
         <div class="p-6 w-full">
+            <!-- name -->
             <h1 class="text-2xl font-semibold text-primary hover:underline hover:cursor-pointer">Francis Rhaey Casas</h1>
 
+            <!-- additional info -->
             <div class="flex flex-row mt-4 ">
                 <img class="w-7 h-7" src="images/user-group.png"></img>
                 <p class="ml-1 text-lg text-gray">153 mutual friends including <span class="text-primary hover:underline hover:cursor-pointer">Vaibhav<br> Mittal</span> & <span class="text-primary hover:underline hover:cursor-pointer">Ranjan Tak</span></p>
@@ -60,7 +49,9 @@
                 </div>
             </div>
 
+            <!-- bottom row -->
             <div class="flex flex-row mt-6">
+                <!-- follow -->
                 <div class="flex flex-row mr-2 justify-center items-center w-2/5 h-[60px] bg-secondary hover:drop-shadow-lg hover:cursor-pointer rounded-full">
                     <div class="flex flex-row space-x-3">
                         <img class="w-7 h-7" src="images/follow-user.png">
@@ -68,6 +59,7 @@
                     </div>
                 </div>
 
+                <!-- message -->
                 <div class="flex flex-row justify-center items-center w-3/5 h-[60px] bg-primary text-white hover:drop-shadow-lg hover:cursor-pointer rounded-full">
                     <div class="flex flex-row space-x-3">
                         <img class="w-7 h-7" src="images/message.png">
@@ -77,5 +69,6 @@
             </div>
         </div>
     </div>    
+    </div>
 </body>
 </html>
